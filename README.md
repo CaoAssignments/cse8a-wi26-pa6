@@ -42,7 +42,7 @@ Both functions will have their own test cases on Gradescope, so make sure to imp
 Write a function that checks the validity of the input parameters and clips the region to fit within the image boundaries if necessary.
 
 The input parameters are considered valid if:
-- All parameters are integer
+- All parameters are integers (In this lab, all input parameters will be integers, so no need to explicitly check this) 
 - The starting pixel is within the bounds of the image, i.e., `0 <= col_index < image width` and `0 <= row_index < image height`
 - The `region_height` and `region_width` are greater than 0
 
@@ -55,6 +55,9 @@ Finally the function should return a tuple of the form `(is_valid, col_index, ro
 ### Part 2.2 Implementation Details
 
 ```python
+# Make sure to import the CSE8AImage Library at the start of your file
+from CSE8AImage import *
+
 def check_and_clip(image, col_index, row_index, region_height, region_width):
     # check if parameters are valid, return (False, None, None, None, None) if not valid
 
@@ -134,6 +137,9 @@ Write a function that flips a selected rectangular region of the image verticall
 ### Part 3.2 Implementation Details
 
 ```python
+# Make sure to import the CSE8AImage Library at the start of your file
+from CSE8AImage import *
+
 def flip_image(image, col_index, row_index, region_height, region_width):
     # Use check_and_clip to validate and adjust the region parameters
 
