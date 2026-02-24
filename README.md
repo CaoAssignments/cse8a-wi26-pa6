@@ -206,8 +206,8 @@ result3 = flip_image(img, -1, 0, 2, 2)
 **Testing with provided images**: we provide sample images including `beach.jpg` and `autumn_leaves.jpg`. If you function works correctly, you should be able to see the flipped regions. For example, if you flip a 200x200 region starting at (100, 100) in `beach.jpg`, you should see the top part of that region swapped with the bottom part.
 
 
-![beach](beach.jpg)
-![beach_flipped](beach_flipped.jpg)
+![beach](./beach.jpg)
+![beach_flipped](./beach_flipped.jpg)
 
 ## Part 4: Submission
 
