@@ -128,7 +128,12 @@ print(check_and_clip(img, 3, 3, 10, 10)) # Expected: (True, 3, 3, 2, 2)
 print(check_and_clip(img, 5, 0, 2, 2)) # Expected: (False, None, None, None, None)
 ```
 
+### Part 2.5 Hidden Testing
+This PA contains 3 hidden tests, they include:
 
+- `check_and_clip`: An edge case where the region is exactly the whole image boundary
+- `flip_image`: A case where the flipped region is 1x1, so the function call should not alter anything 
+- `flip_image`: A case where the entire image is flipped, checking if the final result is correct
 ## Part 3: Function 2: `flip_image` (60 points)
 
 ### Part 3.1 Task Description
